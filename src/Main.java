@@ -17,6 +17,8 @@ public class Main {
             case 3:
                 Task3(null);
                 break;
+            default:
+                System.out.println("Некорректный номер программы");
         }
     }
 
@@ -88,5 +90,4 @@ public class Main {
             }
         }
     }
-
 }
