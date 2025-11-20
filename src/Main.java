@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.printf("Введите номер программы: ");
+        System.out.print("Введите номер программы: ");
         int taskNumber = input.nextInt();
         switch (taskNumber) {
             case 1:
@@ -25,7 +25,7 @@ public class Main {
         int a = 0, b = 0;
         while (true) {
             try {
-                System.out.printf("Введите целое число a:\t");
+                System.out.print("Введите целое число a:\t");
                 a = input.nextInt();
                 break;
             } catch (Exception e) {
@@ -36,7 +36,7 @@ public class Main {
 
         while (true) {
             try {
-                System.out.printf("Введите целое число b:\t");
+                System.out.print("Введите целое число b:\t");
                 b = input.nextInt();
                 break;
             } catch (Exception e) {
@@ -67,9 +67,9 @@ public class Main {
 
     public static void Task2(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.printf("Введите строку a:\t\t");
+        System.out.print("Введите строку a:\t\t");
         String a = input.nextLine();
-        System.out.printf("Введите строку b:\t\t");
+        System.out.print("Введите строку b:\t\t");
         String b = input.nextLine();
 
         if (a.equals(b)) {
