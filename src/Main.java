@@ -11,6 +11,9 @@ public class Main {
             case 1:
                 Task1(null);
                 break;
+            case 2:
+                Task2(null);
+                break;
         }
     }
 
@@ -57,6 +60,20 @@ public class Main {
         }
 
         System.out.println("a * b = " + (a * b));
+    }
+
+    public static void Task2(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("Введите строку a:\t\t");
+        String a = input.nextLine();
+        System.out.printf("Введите строку b:\t\t");
+        String b = input.nextLine();
+
+        if (a.equals(b)) {
+            System.out.println("Строки идентичны");
+        }  else {
+            System.out.println("Строки неидентичны");
+        }
     }
 
 }
