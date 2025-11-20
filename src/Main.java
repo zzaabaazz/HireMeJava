@@ -14,6 +14,9 @@ public class Main {
             case 2:
                 Task2(null);
                 break;
+            case 3:
+                Task3(null);
+                break;
         }
     }
 
@@ -73,6 +76,16 @@ public class Main {
             System.out.println("Строки идентичны");
         }  else {
             System.out.println("Строки неидентичны");
+        }
+    }
+
+    public static void Task3(String[] args) {
+        int [] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        // Перебор массива и вывод чётных чисел
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                System.out.println(number);
+            }
         }
     }
 
