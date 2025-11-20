@@ -17,20 +17,26 @@ public class Main {
     public static  void Task1(String[] args) {
         Scanner input = new Scanner(System.in);
         int a = 0, b = 0;
-        System.out.printf("Введите целое число a:   ");
-        
-
-        try {
-            a = input.nextInt();
-        } catch (Exception e) {
-            System.out.println("Ошибка:" + e);
+        while (true) {
+            try {
+                System.out.printf("Введите целое число a:\t");
+                a = input.nextInt();
+                break;
+            } catch (Exception e) {
+                System.out.println("Ошибка:" + e);
+                input.nextLine();
+            }
         }
 
-        System.out.printf("Введите целое число b:   ");
-        try {
-            b = input.nextInt();
-        } catch (Exception e) {
-            System.out.println("Ошибка: " + e);
+        while (true) {
+            try {
+                System.out.printf("Введите целое число b:\t");
+                b = input.nextInt();
+                break;
+            } catch (Exception e) {
+                System.out.println("Ошибка:" + e);
+                input.nextLine();
+            }
         }
 
         if (a > b) { //сравнение 2х чисел
