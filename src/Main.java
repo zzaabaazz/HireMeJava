@@ -22,7 +22,6 @@ public class Main {
 
     public static  void Task1(String[] args) {
         Scanner input = new Scanner(System.in);
-        int a = 0, b = 0;
         while (true) {
             try {
                 System.out.print("Введите целое число a:\t");
